@@ -7,6 +7,7 @@ float ballX;
 //float ballX2 = random(0,width);
 //float ballY3;
 //float ballX3 = random(0,width);
+
 //constructor
  Ball() {
   ballX = random(0,width);
@@ -15,9 +16,6 @@ float ballX;
   
   //ballX3 = random(0,width);
  }
-
-
-
 
 //move
 void move() {
@@ -32,7 +30,6 @@ void display() {
   fill(0);
   ellipse(ballX,ballY,50,50);
 }
-
 
 //reset
 void reset() {
