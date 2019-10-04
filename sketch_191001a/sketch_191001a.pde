@@ -50,17 +50,17 @@ void draw() {
      ballX3 = random(0,width);
   }
   //the gravity for falling ball 
-  ballY = ballY + 5;
+  ballY = ballY + 10;
   if (ballY > 1100) {
     ballY = 0; 
   } 
   //ball 2 gravity
-  ballY2 = ballY2 + 5;
+  ballY2 = ballY2 + 10;
   if (ballY2 > 1100) {
     ballY2 = 0; 
   }
   //ball 3 gravity
-  ballY3 = ballY3 + 5;
+  ballY3 = ballY3 + 10;
   if (ballY3 > 1100) {
     ballY3 = 0; 
   }
@@ -76,18 +76,19 @@ void draw() {
   y += dy * easing;
  
   //the ship
+  //boddy of ship
   fill(0);
   ellipse(x + 5, y - 10, 30, 100);
-  
+  //the thing that goes across body
   fill(0);
   rect(x - 50, y - 20, 100, 10);
-  
+  //left side thing
   fill(0);
   rect(x - 50, y - 60, 10, 100);
-  
+  //right side thing
   fill(0);
   rect(x + 50, y - 60, 10, 100);
-  
+  //something about making ship not go off screen
   if (x < 0 && y < 0) {
    x = height;
    y = height;
