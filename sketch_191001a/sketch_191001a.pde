@@ -14,6 +14,10 @@ float ballX = random(0,width);
 float targetX;
 float targetY;
 float easing = 0.5;
+
+int numberOfBalls = 3;
+
+Ball[] manyBalls = new Ball[numberOfBalls];
 //ball 2 variables
 //float ballY2;
 //float ballX2 = random(0,width);
@@ -28,6 +32,10 @@ Ship darrien = new Ship();
 //setup
 void setup() {
   size(1000,1000);
+  background(255);
+  for (int i = 0; i < numberOfBalls; i++) {
+    manyBalls[i] = new Ball();
+  }
 }
 
 //putting in falling objects
@@ -40,6 +48,12 @@ void draw() {
   
   darrien.fly();
   darrien.shipDisplay();
+  
+  for(int i = 0; i < manyBalls.length; i++) {
+    manyBalls[i].display();
+    manyBalls[i].fall();
+  }
+  }
   ////float ballX = random(0,);
   //ellipse(ballX,ballY,50,50);
   //fill(0);
@@ -103,5 +117,3 @@ void draw() {
   // x = height;
   // y = height;
   //}
-
-}
