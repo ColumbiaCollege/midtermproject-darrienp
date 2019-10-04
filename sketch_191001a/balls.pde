@@ -18,7 +18,7 @@ float ballX;
  }
 
 //move
-void move() {
+void fall() {
 ballY = ballY + 10;
   if (ballY > 1100) {
     ballY = 0;
