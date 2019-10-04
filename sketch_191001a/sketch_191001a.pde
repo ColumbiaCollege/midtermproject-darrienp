@@ -9,7 +9,7 @@ float x;
 float y;
 //ball variables
 float ballY;
-float ballX;
+float ballX = random(0,width);
 //variables for ship movement
 float targetX;
 float targetY;
@@ -24,16 +24,20 @@ void setup() {
 //putting in falling objects
 void draw() {
   background(255);
-  
+  //float ballX = random(0,);
   ellipse(ballX,ballY,50,50);
   fill(0);
-  ballX = random(ballX);
-  //x = random(height);
+  
+  if (ballY == height) {
+     ballX = random(0,width);
+  }
+  
   //the gravity for falling ball 
   ballY = ballY + 5;
   if (ballY > 1100) {
     ballY = 0; 
-  }  
+  } 
+  
 
 
   //movement for the ship
