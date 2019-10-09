@@ -26,7 +26,7 @@ Ship darrien = new Ship();
 //setup
 void setup() {
   size(1000,1000);
-  background(255);
+  background(0);
   // pretty sure array for balls
   for (int i = 0; i < numberOfBalls; i++) {
     manyBalls[i] = new Ball();
@@ -35,7 +35,7 @@ void setup() {
 
 //putting in falling objects
 void draw() {
-  background(255);
+  background(0);
   //game
   game.display();
   game.fall();
@@ -50,7 +50,7 @@ void draw() {
     manyBalls[i].fall();
   }
  //collision
-  if(ballY = ) {
+  if() {
     
   }
 

@@ -38,17 +38,20 @@ class Ship {
   //display
   void shipDisplay() {
   //the ship
-  //boddy of ship
-  fill(0);
+  //thing connecting other things
+  fill(0,0,100);
+  rect(x - 50, y - 20, 100, 10);
+  //body of the ship
+  fill(200,0,0);
   ellipse(x + 5, y - 10, 30, 100);
   //the thing that goes across body
-  fill(0);
-  rect(x - 50, y - 20, 100, 10);
+  //fill(200,0,0);
+ // rect(x - 50, y - 20, 100, 10);
   //left side thing
-  fill(0);
+  fill(0,200,100);
   rect(x - 50, y - 60, 10, 100);
   //right side thing
-  fill(0);
+  fill(0,200,100);
   rect(x + 50, y - 60, 10, 100);
   
   }

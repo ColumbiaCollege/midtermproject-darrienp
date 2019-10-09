@@ -27,7 +27,7 @@ ballY = ballY + 10;
 
 //display
 void display() {
-  fill(0);
+  fill(0,255,0);
   ellipse(ballX,ballY,50,50);
 }
 
