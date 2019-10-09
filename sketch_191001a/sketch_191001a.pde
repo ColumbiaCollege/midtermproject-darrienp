@@ -4,6 +4,7 @@
 //if needed download gimp at home to remove backgrounds from images
 
 //variables here
+
 //ship variables
 float x;
 float y;
@@ -48,11 +49,12 @@ void draw() {
   for(int i = 0; i < manyBalls.length; i++) {
     manyBalls[i].display();
     manyBalls[i].fall();
+    manyBalls[i].collide();
   }
  //collision
-  if() {
+  //if() {
     
-  }
+  //}
 
 
 }

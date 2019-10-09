@@ -38,7 +38,11 @@ void reset() {
   }
 }
   
-  
+  void collide() {
+  if (dist(ballX,ballY,x,y) < x + ballX) {
+     println("you lose");
+  }
+}
   
   
   
