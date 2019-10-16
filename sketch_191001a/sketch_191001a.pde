@@ -1,7 +1,7 @@
-//midterm
-//Darrien Parker
-//October 1 2019
-//if needed download gimp at home to remove backgrounds from images
+// midterm
+// Darrien Parker
+// October 1 2019
+// if needed download gimp at home to remove backgrounds from images
 
 //variables here
 

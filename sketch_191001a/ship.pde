@@ -6,7 +6,8 @@ class Ship {
   float targetX;
   float targetY;
   float easing = 0.5;
-  
+  float radius = 30;
+  float radius2 = 100;
   
   //constructor
   Ship() {
