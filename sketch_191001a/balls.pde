@@ -43,6 +43,18 @@ class Ball {
   void collide() {
     if (dist(darrien.x, darrien.y, ballX, ballY) < radius + darrien.radius ) {
       println("you lose");
+      //background(0);
+    boolean gameOver = false;
+    if(gameOver == false) {
+      background(0);
+      fill(255);
+      textSize(300);
+      text("lose",width/2 - 300,height/2);
+      
     }
+      
+    
   }
+  
+}
 }

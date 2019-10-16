@@ -18,6 +18,7 @@ float easing = 0.5;
 // gonna use so many balls fall from top
 int numberOfBalls = 3;
 
+
 Ball[] manyBalls = new Ball[numberOfBalls];
 
 Ball game = new Ball();
