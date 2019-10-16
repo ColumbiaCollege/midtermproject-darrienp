@@ -44,12 +44,13 @@ class Ball {
     if (dist(darrien.x, darrien.y, ballX, ballY) < radius + darrien.radius ) {
       println("you lose");
       //background(0);
+    //to make game over
     boolean gameOver = false;
     if(gameOver == false) {
       background(0);
       fill(255);
-      textSize(300);
-      text("lose",width/2 - 300,height/2);
+      textSize(100);
+      text("GAME OVER",width/2 - 300,height/2);
       
     }
       

@@ -52,10 +52,8 @@ void draw() {
     manyBalls[i].fall();
     manyBalls[i].collide();
   }
- //collision
-  //if() {
-    
-  //}
+ 
+ 
 
 
 }
